@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6eb8f5;
+}
+
+.Contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color:#9acef8;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+header{
+    margin: 20px 0;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+.Subtitulo{
+    margin: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.titulo{
+    padding-left: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+.Celda{
+    display: flex;
+    justify-content: space-around;
+}
+.Box1{
+    margin: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+li{
+    font-family: 'Raleway', sans-serif;
+    padding: 2px;
+}
+.Box2{
+    margin: 10px;
+    box-sizing: border-box;
+}
+.Celda{
+    width: 60%;
+    padding-top: 2%;
+    padding-right: 10%;
+     padding-left: auto;
+    box-sizing: border-box;
+    
+}
+tr{
+    background-color: darkgrey;
+}
+td{
+    padding: 7px;
+    border-style: groove;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px){
+    .Contenedor{
+        width: 80%;
+        padding-top: 2%;
+        padding-right: 15%;
+    }
+    .Celda{
+        width: auto;
+    }
+    @media screen and (max-width: 697px){
+        .Contenedor{
+            width: 100%;
+            padding-top: 2%;
+            padding-right: 15%;
+        }
+        td{
+display: none;
+    
+    }
+}
