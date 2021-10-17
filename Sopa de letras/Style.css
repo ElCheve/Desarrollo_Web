@@ -7,17 +7,22 @@
 body{
     background-color: #6eb8f5;
 }
+header{
+    z-index:2;
+    margin: 20px 0;
+}
 
 .Contenedor{
-    width: 80%;
-    max-width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    max-width: 70%;
     margin: 0 auto;
     background-color:#9acef8;
     overflow: hidden;
     box-sizing: border-box;
-}
-header{
-    margin: 20px 0;
 }
 
 h1{
@@ -27,43 +32,56 @@ h2{
     font-family: 'Raleway', sans-serif;
 }
 .Subtitulo{
-    margin: 10px;
+    background: linear-gradient(45deg, blue, #8073f5);
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index:2;
+    position:absolute;
+    top:0;
+    margin-top: 60px;
     padding-left: 10px;
     box-sizing: border-box;
+
 }
 .titulo{
+    background: linear-gradient(45deg, blue, #8073f5);
+    -webkit-background-clip: text;
+    color: transparent;
+    position:absolute;
+    top:0;
     padding-left: 10px;
     margin: 10px;
     box-sizing: border-box;
-}
-
-
-.Celda{
-    display: flex;
-    justify-content: space-around;
+    font-weight: bold;
 }
 .Box1{
-    margin: 10px;
-    padding-left: 20px;
+    position: relative;
     box-sizing: border-box;
+    justify-content:center;
+    margin: 0;
+    padding-right: 20px;
+
 }
 li{
     font-family: 'Raleway', sans-serif;
     padding: 2px;
 }
 .Box2{
-    margin: 10px;
+    position:relative;
+    margin-top: 50px;
     box-sizing: border-box;
+    padding-top: 70px;
+    
 }
 .Celda{
     width: 60%;
     padding-top: 2%;
     padding-right: 10%;
-     padding-left: auto;
+    padding-left: auto;
     box-sizing: border-box;
-    
 }
 tr{
+    background: linear-gradient(45deg, #6eb8f5, #8073f5);
     background-color: darkgrey;
 }
 td{
@@ -73,23 +91,69 @@ td{
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 884px){
     .Contenedor{
-        width: 80%;
-        padding-top: 2%;
-        padding-right: 15%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+        background-color:#9acef8;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 1000px;
     }
-    .Celda{
-        width: auto;
-    }
-    @media screen and (max-width: 697px){
-        .Contenedor{
-            width: 100%;
-            padding-top: 2%;
-            padding-right: 15%;
-        }
-        td{
-display: none;
+    .Subtitulo{
+        z-index:2;
+        position:absolute;
+        top:0;
+        margin-top: 45px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        font-size: 10px;
     
     }
+    .titulo{
+        position:absolute;
+        top:0;
+        padding-left: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    .Box1{
+        position: absolute;
+        display:flex;
+        position: relative;
+        box-sizing: border-box;
+        justify-content:center;
+        margin-bottom: 600px;
+        margin-left:5%;
+        padding-right: 20px;
+    
+    }
+    li{
+        font-family: 'Raleway', sans-serif;
+        padding: 2px;
+    }
+    .Box2{
+        position:absolute;
+        margin-bottom: 120px;
+        box-sizing: border-box;
+        padding-top: 70px;
+        
+    }
+    .Celda{
+        width: 60%;
+        padding-top: 2%;
+        padding-right: 10%;
+        padding-left: auto;
+        box-sizing: border-box;
+    }
+
+}
+@media screen and (max-width: 601px){
+    .Celda{
+        display: none;
+    }
+
 }
